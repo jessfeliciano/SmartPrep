@@ -1,0 +1,34 @@
+type Query {
+    recipes: [Recipe]
+}
+
+enum RecipeType {
+    Bake
+    Stovetop
+}
+
+type Recipe {
+    id: String
+    name: String
+    type: RecipeType
+    isActive: Boolean
+    ingredients: [Ingredient]
+}
+
+type Ingredient {
+    category: String
+    name: String
+    amount: Float  # Number should be Float or Int
+    unit: String
+}
+
+type RecipeMutationResponse {
+    code: String!
+    success: Boolean!
+    message: String!
+    recipe: Recipe
+}
+
+type Mutation {
+    toggleActiveStatus(id: String!): RecipeMutationResponse
+}
