@@ -1,10 +1,10 @@
 import React from 'react';
+import Header from '../layout/pageHeader';
 
 const RecipesPage = () => {
   return (
     <div>
-      <h2>Recipes Component</h2>
-      {/* Your recipes component JSX */}
+      <Header pageTitle={"Meal Planning"} />
     </div>
   );
 };

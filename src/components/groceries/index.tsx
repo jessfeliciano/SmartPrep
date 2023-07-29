@@ -1,11 +1,11 @@
 // GroceriesComponent.jsx
 import React from 'react';
+import Header from '../layout/pageHeader';
 
 const GroceriesPage = () => {
   return (
     <div>
-      <h2>Groceries Component</h2>
-      {/* Your groceries component JSX */}
+      <Header pageTitle={"Groceries"} />
     </div>
   );
 };
