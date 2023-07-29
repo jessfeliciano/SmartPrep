@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Navigate, Route, Routes, Link } from 'react-router-dom';
+import RecipesPage from './components/recipes';
+import GroceriesPage from './components/groceries';
+import { AppProvider } from './context/AppContext';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        {/* <a href="https://vitejs.dev" target="_blank"> */}
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        {/* </a> */}
-        {/* <a href="https://react.dev" target="_blank"> */}
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        {/* </a> */}
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <BrowserRouter>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/recipes">Recipes</Link>
+          </li>
+          <li>
+            <Link to="/groceries">Groceries</Link>
+          </li>
+        </ul>
+      </nav>
+      <AppProvider>
+        <Routes>
+            <Route path="/recipes" element={<RecipesPage />} />
+            <Route path="/groceries" element={<GroceriesPage />} />
+            <Route
+              path="*"
+              element={<Navigate to="/recipes" replace />}
+            />
+        </Routes>
+      </AppProvider>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
