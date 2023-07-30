@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "main": "index.js",
   "type": "module",
-  "homepage": "https://your-github-username.github.io/meal-prep-vite",
+  "homepage": "https://your-github-username.github.io/meal-planner",
   "scripts": {
     "dev": "vite",
     "predeploy": "vite build",
