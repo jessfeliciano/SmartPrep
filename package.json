@@ -7,7 +7,7 @@
   "homepage": "https://jessfeliciano.github.io/meal-planner",
   "scripts": {
     "dev": "vite",
-    "predeploy": "vite build",
+    "build": "vite build",
     "deploy": "gh-pages -d build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
