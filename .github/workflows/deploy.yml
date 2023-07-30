@@ -43,7 +43,7 @@ jobs:
           path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: jessfeliciano/Meal-Planner
+        uses: jessfeliciano/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
