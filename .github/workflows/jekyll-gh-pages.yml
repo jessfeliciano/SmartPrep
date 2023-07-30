@@ -50,5 +50,5 @@ jobs:
         id: deployment
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Use the built-in GITHUB_TOKEN secret
           publish_dir: ./dist # Replace './dist' with the actual output directory of your Vite build
