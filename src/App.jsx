@@ -10,11 +10,11 @@ const App = () => {
       <AppProvider>
         <Layout>
           <Routes>
-                <Route path="/recipes" element={<RecipesPage />} />
-                <Route path="/groceries" element={<GroceriesPage />} />
+                <Route path="/Meal-Planner/recipes" element={<RecipesPage />} />
+                <Route path="/Meal-Planner/groceries" element={<GroceriesPage />} />
                 <Route
                   path="*"
-                  element={<Navigate to="/recipes" replace />}
+                  element={<Navigate to="/Meal-Planner/recipes" replace />}
                 />
           </Routes>
         </Layout>
