@@ -19,6 +19,9 @@ export default defineConfig({
       transformMixedEsModules: true,
       // include: [/linked-dep/, /node_modules/],
     },
+    optimizeDeps: {
+      exclude: ['vue-demi', '@vite/client', '@vite/env'],
+    }
   },
 })
 
