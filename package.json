@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "main": "main.jsx",
   "type": "module",
-  "homepage": "https://jessfeliciano.github.io/SmartPrep",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
