@@ -6,6 +6,14 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: './dist',
-    base: '/SmartPrep/'
+    base: '/SmartPrep/',
+    rollupOptions: {
+      output: {
+        // Ensures the MIME type is set to 'application/javascript'
+        mimeTypes: {
+          'js': 'application/javascript',
+        },
+      },
+    },
   },
 })
