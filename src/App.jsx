@@ -13,7 +13,7 @@ const App = () => {
                 <Route path="/recipes" element={<RecipesPage />} />
                 <Route path="/groceries" element={<GroceriesPage />} />
                 <Route
-                  path="/SmartPrep/"
+                  path="/"
                   element={<Navigate to="/recipes" replace />}
                 />
           </Routes>
