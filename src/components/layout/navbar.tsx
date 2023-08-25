@@ -4,8 +4,8 @@ import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 
 const navigation = [
-    { name: 'Meal Planner', href: '/recipes', current: location.pathname === '/recipes' },
-    { name: 'Groceries', href: '/groceries', current: location.pathname === '/groceries' },
+    { name: 'Meal Planner', href: './recipes', current: location.pathname === '/recipes' },
+    { name: 'Groceries', href: './groceries', current: location.pathname === '/groceries' },
   ]
 
 function classNames(...classes: string[]) {
