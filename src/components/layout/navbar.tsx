@@ -12,8 +12,8 @@ const Navbar = () => {
     const location = useLocation();
 
     const navigation = [
-        { name: 'Meal Planner', href: './recipes', current: location.pathname === '/recipes' },
-        { name: 'Groceries', href: './groceries', current: location.pathname === '/groceries' },
+        { name: 'Meal Planner', href: '/recipes', current: location.pathname === '/recipes' },
+        { name: 'Groceries', href: '/groceries', current: location.pathname === '/groceries' },
       ]
 
     return (
