@@ -2,7 +2,7 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import { SparklesIcon } from "@heroicons/react/24/solid";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
@@ -29,9 +29,9 @@ const Navbar = () => {
                             <div className="hidden md:block">
                                 <div className="ml-10 flex items-baseline space-x-4">
                                     {navigation.map((item) => (
-                                        <a
+                                        <NavLink
                                         key={item.name}
-                                        href={item.href}
+                                        to={item.href}
                                         className={classNames(
                                             item.current
                                             ? 'bg-gray-900 text-white'
@@ -41,7 +41,7 @@ const Navbar = () => {
                                         aria-current={item.current ? 'page' : undefined}
                                         >
                                         {item.name}
-                                        </a>
+                                        </NavLink>
                                     ))}
                                 </div>
                             </div>
