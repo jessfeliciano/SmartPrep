@@ -2,17 +2,20 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import { SparklesIcon } from "@heroicons/react/24/solid";
-
-const navigation = [
-    { name: 'Meal Planner', href: './recipes', current: location.pathname === '/recipes' },
-    { name: 'Groceries', href: './groceries', current: location.pathname === '/groceries' },
-  ]
+import { useLocation } from "react-router-dom";
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
   }
 
 const Navbar = () => {
+    const location = useLocation();
+
+    const navigation = [
+        { name: 'Meal Planner', href: './recipes', current: location.pathname === '/recipes' },
+        { name: 'Groceries', href: './groceries', current: location.pathname === '/groceries' },
+      ]
+
     return (
         <Disclosure as="nav" className="bg-gray-800 flex flex-wrap w-full">
             {({ open }) => (
