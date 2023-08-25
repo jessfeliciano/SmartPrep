@@ -1,7 +1,7 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
-import { SparklesIcon } from "@heroicons/react/24/solid";
+// import { SparklesIcon } from "@heroicons/react/24/solid";
 import { NavLink, useLocation } from "react-router-dom";
 
 function classNames(...classes: string[]) {
@@ -24,23 +24,25 @@ const Navbar = () => {
                     <div className="flex h-16 items-center justify-between">
                         <div className="flex items-center">
                             <div className="flex-shrink-0">
-                                <SparklesIcon className="h-8 w-8 text-neutral-200" aria-hidden="true" />
+                                <img src="src/assets/logo-small-transparent.png"
+                                    className="h-8 w-8"
+                                ></img>
                             </div>
                             <div className="hidden md:block">
                                 <div className="ml-10 flex items-baseline space-x-4">
                                     {navigation.map((item) => (
                                         <NavLink
-                                        key={item.name}
-                                        to={item.href}
-                                        className={classNames(
-                                            item.current
-                                            ? 'bg-gray-900 text-white'
-                                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                            'rounded-md px-3 py-2 text-sm font-medium'
-                                        )}
-                                        aria-current={item.current ? 'page' : undefined}
-                                        >
-                                        {item.name}
+                                            key={item.name}
+                                            to={item.href}
+                                            className={classNames(
+                                                item.current
+                                                ? 'bg-gray-900 text-white'
+                                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                                'rounded-md px-3 py-2 text-sm font-medium'
+                                            )}
+                                            aria-current={item.current ? 'page' : undefined}
+                                            >
+                                            {item.name}
                                         </NavLink>
                                     ))}
                                 </div>
