@@ -24,9 +24,9 @@ const Navbar = () => {
                     <div className="flex h-16 items-center justify-between">
                         <div className="flex items-center">
                             <div className="flex-shrink-0">
-                                <img src="src/assets/logo-small-transparent.png"
+                                <img src="logo-small-transparent.png"
                                     className="h-8 w-8"
-                                ></img>
+                                />
                             </div>
                             <div className="hidden md:block">
                                 <div className="ml-10 flex items-baseline space-x-4">
