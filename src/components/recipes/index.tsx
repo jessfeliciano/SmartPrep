@@ -34,7 +34,7 @@ const RecipesPage = () => {
   return (
     <main>
       <div className='bg-gray-100 py-8'>
-          <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl p-6 sm:px-6 lg:px-8">
             <PageHeader pageTitle={"Meal Planning"} />
             <div className='grid lg:grid-cols-3 sm:grid-cols-1'>
               <div className='col-span-1 shadow p-4'>

@@ -46,6 +46,7 @@ const GroceriesPage = () => {
                 </th>
               </tr>
             </thead>
+            
             <tbody className="divide-y divide-gray-200 bg-white">
               {ingredients && ingredients.map((ingredient) => (
                 <tr key={ingredient.id}>
