@@ -1,11 +1,12 @@
 import { Recipe } from "../@types/recipe";
+import { v4 as uuidv4 } from 'uuid';
 
 const initialData: Recipe[] = [
     {
         id: "643b298e0ee565a48bc1d08d",
         name: "Dynamite Shrimp Rice Bowl",
         type: "Bake",
-        isActive: true,
+        isActive: false,
         ingredients: [
             {
                 id: "1a8718fb-a3af-4412-8a23-b207c689ca99",
@@ -183,7 +184,7 @@ const initialData: Recipe[] = [
         id: "643b298e0ee565a48bc1d088",
         name: "Salsa Verde Steak Strips",
         type: "Stovetop",
-        isActive: true,
+        isActive: false,
         ingredients: [
             {
                 id: "5e21f17c-67b9-44d3-af08-5933d640a398",
@@ -340,7 +341,7 @@ const initialData: Recipe[] = [
         id: "643b298e0ee565a48bc1d08c",
         name: "Teriyaki Salmon Rice Bowl",
         type: "Stovetop",
-        isActive: true,
+        isActive: false,
         ingredients: [
             {
                 id: "03d97aee-f01c-4a3f-b619-3de7be11c81f",
@@ -404,7 +405,7 @@ const initialData: Recipe[] = [
         id: "643b298e0ee565a48bc1d08a",
         name: "Zucchini and Jalapeño Crusted Chicken",
         type: "Bake",
-        isActive: true,
+        isActive: false,
         ingredients: [
             {
                 id: "8df166ef-8931-408c-990e-2a4bae57c599",
@@ -442,6 +443,199 @@ const initialData: Recipe[] = [
                 unit: "oz."
             }
         ],
+    },
+    {
+        id: "299f6b36-f655-41ee-8bc2-b048e94dbbd5",
+        name: "Protein Spaghetti",
+        type: "Stovetop",
+        isActive: true,
+        ingredients: [
+            {
+                id: "6dcf8908-b615-4679-8560-42ecf9d8dec1",
+                category: "Veggies",
+                name: "Chopped Kale",
+                amount: 1,
+                unit: "lb"
+            },
+            {
+                id: "715baae8-28b9-4375-a906-780c6fec1c92",
+                category: "Meats",
+                name: "Any ground protein",
+                amount: 1,
+                unit: "lb"
+            },
+            {
+                id: "11a946cf-b95c-48c9-a863-3a34bb60d825",
+                category: "Sauces",
+                name: "Marinara Sauce",
+                amount: 1,
+                unit: "jar"
+            },
+            {
+                id: "52f1dfda-4eb1-4d28-87fb-c889dd72a369",
+                category: "Legumes",
+                name: "Legume based spaghetti noodles",
+                amount: 1,
+                unit: "package"
+            },
+        ]
+    },
+    {
+        id: uuidv4(),
+        name: "Spinach Steak Raspberry Salad",
+        type: "Stovetop",
+        isActive: true,
+        ingredients: [
+            {
+                id: uuidv4(),
+                category: "Veggies",
+                name: "Spinach",
+                amount: 1,
+                unit: "lb."
+            },
+            {
+                id: uuidv4(),
+                category: "Meats",
+                name: "Top Sirloin",
+                amount: 20,
+                unit: "oz."
+            },
+            {
+                id: uuidv4(),
+                category: "Sauces",
+                name: "Raspberry Vinegarette",
+                amount: 1,
+                unit: "jar"
+            },            
+            {
+                id: uuidv4(),
+                category: "Condiments",
+                name: "Dijon mustard",
+                amount: 1,
+                unit: "jar"
+            },
+            {
+                id: uuidv4(),
+                category: "Oils",
+                name: "Olive Oil",
+                amount: 20,
+                unit: "oz."
+            },
+            {
+                id: uuidv4(),
+                category: "Veggies",
+                name: "Minced Garlic",
+                amount: 1.5,
+                unit: "tbs."
+            },
+            {
+                id: uuidv4(),
+                category: "Veggies",
+                name: "Red onion",
+                amount: 1,
+                unit: "onion"
+            },
+        ]
+    },
+    {
+        id: uuidv4(),
+        name: "Lentil Avocado Toast",
+        type: "Stovetop",
+        isActive: true,
+        ingredients: [
+            {
+                id: uuidv4(),
+                category: "Legumes",
+                name: "Red Lentils",
+                amount: 1,
+                unit: "lb."
+            },
+            {
+                id: uuidv4(),
+                category: "Meats & proteins",
+                name: "Eggs",
+                amount: 3,
+                unit: "eggs"
+            },
+            {
+                id: uuidv4(),
+                category: "Veggies",
+                name: "Cherry Tomatoes",
+                amount: 1,
+                unit: "package"
+            },            
+            {
+                id: uuidv4(),
+                category: "Veggies",
+                name: "Avocados",
+                amount: 3,
+                unit: "avocados"
+            },
+            {
+                id: uuidv4(),
+                category: "Oils",
+                name: "Olive Oil",
+                amount: 1,
+                unit: "tsp."
+            },
+        ]
+    },
+    {
+        id: uuidv4(),
+        name: "Chicken Noodle Soup",
+        type: "Stovetop",
+        isActive: true,
+        ingredients: [
+            {
+                id: "52f1dfda-4eb1-4d28-87fb-c889dd72a369",
+                category: "Legumes",
+                name: "Legume based spaghetti noodles",
+                amount: 1,
+                unit: "package"
+            },
+            {
+                id: uuidv4(),
+                category: "Meats & proteins",
+                name: "Chicken Thighs",
+                amount: 1,
+                unit: "lbs."
+            },
+            {
+                id: uuidv4(),
+                category: "Veggies",
+                name: "White Onion",
+                amount: 1,
+                unit: "onion"
+            },            
+            {
+                id: uuidv4(),
+                category: "Veggies",
+                name: "Celery",
+                amount: 1,
+                unit: "package"
+            },
+            {
+                id: uuidv4(),
+                category: "Broths",
+                name: "Chicken Broth",
+                amount: 14.5,
+                unit: "oz."
+            },
+            {
+                id: uuidv4(),
+                category: "Broths",
+                name: "Vegetable Broth",
+                amount: 14.5,
+                unit: "oz."
+            },
+            {
+                id: uuidv4(),
+                category: "Veggies",
+                name: "Carrots",
+                amount: 8,
+                unit: "oz."
+            },
+        ]
     }
 ]
 
