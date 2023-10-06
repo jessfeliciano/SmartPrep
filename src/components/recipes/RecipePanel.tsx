@@ -19,8 +19,8 @@ const RecipesPanel = ({recipes, isActive, onStatusChange}: Props) => {
     return (
         <ul role="list" className={gridClass()}>
             {recipes.sort().map((recipe: Recipe) => (
-                <li key={recipe.name} className="col-span-1 divide-y divide-gray-200 rounded-lg bg-white shadow">
-                    <div className="flex w-full items-center justify-between space-x-6 p-6">
+                <li key={recipe.name} className="col-span-1 flex flex-col justify-end divide-y divide-gray-200 rounded-lg bg-white shadow">
+                    <div className="flex w-full h-full items-center justify-between space-x-6 p-6">
                         <div className="flex-1">
                             <div className="flex items-center space-x-3">
                                 <h3 className="text-lg font-bold text-gray-900">{recipe.name}</h3>
